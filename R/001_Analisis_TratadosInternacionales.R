@@ -17,9 +17,25 @@ df_tratados
 
 # Generamos una tabla dado que son valores cualitativos
 
-tabla_tratados <- table(df_tratados) # Tabla de 3 dimensiones
-tabla_tratados
+# Derechos humanos
+tabla_tratados_dh <- table(df_tratados$Pais, df_tratados$TDH) # Tabla de 4 dimensiones
+tabla_tratados_dh
+
+# -- Ver el porcentaje de 
+round(prop.table(tabla_tratados_dh, margin = 1) * 100, 2)
+
+margin.table(tabla_tratados_dh, margin = 2)
+
+# Comercio Internacional
+tabla_tratados_ci <- table(df_tratados$Pais, df_tratados$TCI)
+tabla_tratados_ci
 
 # Para tener una mejor visualización utilizamos Crosstable
 library(gmodels)
 CrossTable(df_tratados$Pais, df_tratados$TCI)
+
+
+
+
+
+
