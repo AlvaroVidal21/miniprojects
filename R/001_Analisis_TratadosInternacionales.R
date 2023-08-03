@@ -3,7 +3,7 @@ paises <- c("Estados Unidos", "Canadá", "Reino Unido", "Francia", "Alemania",
                   "España", "Italia", "Japón", "Brasil", "Australia") # 10 países
 
 # Generamos un dataframe con 100 respuestas aleatorias para cada tratado por país
-set.seed(123)  # Para reproducibilidad de resultados
+set.seed(243)  # Para reproducibilidad de resultados
 df_tratados <- data.frame(
   Pais = rep(sample(paises, size = 10, replace = FALSE), each = 100), # Colocamos FALSE para tener 100 muestras por cada país
   TCI = sample(c("A favor", "En contra", "Neutral"), size = 1000, replace = TRUE),
@@ -17,12 +17,15 @@ df_tratados
 
 # Generamos una tabla dado que son valores cualitativos
 
+
 # Derechos humanos
-tabla_tratados_dh <- table(df_tratados$Pais, df_tratados$TDH) # Tabla de 4 dimensiones
+tabla_tratados_dh <- table(df_tratados$Pais, df_tratados$TDH) # Tabla de 2 dimensiones
 tabla_tratados_dh
+round(prop.table(tabla_tratados_dh, margin = 2)*100, 2)
+round(prop.table(tabla_tratados_dh,)*100, 2)
 
 # -- Ver el porcentaje de 
-round(prop.table(tabla_tratados_dh, margin = 1) * 100, 2)
+round(prop.table(tabla_tratados_dh, margin = 2) * 100, 2)
 
 margin.table(tabla_tratados_dh, margin = 2)
 
