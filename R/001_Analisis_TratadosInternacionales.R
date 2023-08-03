@@ -15,27 +15,25 @@ df_tratados
 # Tratado de Derechos Humanos (TDH)
 # Tratado Medioambiental (TMA)
 
-# Generamos una tabla dado que son valores cualitativos
-
-
-# Derechos humanos
-tabla_tratados_dh <- table(df_tratados$Pais, df_tratados$TDH) # Tabla de 2 dimensiones
-tabla_tratados_dh
-round(prop.table(tabla_tratados_dh, margin = 2)*100, 2)
-round(prop.table(tabla_tratados_dh,)*100, 2)
-
-# -- Ver el porcentaje de 
-round(prop.table(tabla_tratados_dh, margin = 2) * 100, 2)
-
-margin.table(tabla_tratados_dh, margin = 2)
-
-# Comercio Internacional
+# Generamos una tabla bidimensionales por cada tratado:
+# Tratado de Comercio Internacional
 tabla_tratados_ci <- table(df_tratados$Pais, df_tratados$TCI)
 tabla_tratados_ci
 
-# Para tener una mejor visualización utilizamos Crosstable
-library(gmodels)
-CrossTable(df_tratados$Pais, df_tratados$TCI)
+
+# Derechos Humanos
+tabla_tratados_dh <- table(df_tratados$Pais, df_tratados$TDH) 
+tabla_tratados_dh
+
+
+# Tratado Medioambiental
+tabla_tratados_ma <- table(df_tratados$Pais, df_tratados$TMA)
+tabla_tratados_ma
+
+
+# --------------- preguntas ----------------------
+# 1. Distribución de opiniones por país: ¿Cuál es la distribución de opiniones (A favor, En contra, Neutral) en cada país para cada tratado internacional?
+
 
 
 
