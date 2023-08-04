@@ -12,7 +12,8 @@ df_tratados <- data.frame(
 )
 
 # Exportar los datos del dataframe 
-
+library(readr)
+write.csv(df_tratados, "df_tratados.csv", row.names = FALSE, sep = ",", col.names = TRUE)
 
 df_tratados
 # Tratado de Comercio Internacional (TCI)
