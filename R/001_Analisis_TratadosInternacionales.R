@@ -52,6 +52,44 @@ distr_opiniones_tma_byCountry
 
 
 
+# --------------- PREGUNTA 2 ----------------------
+
+
+
+
+# --------------- PREGUNTA 3 ----------------------
+# 3.1. TCI (Tratado de Comercio Internacional)
+tci_afavor <- distr_opiniones_tci_byCountry[ ,1]# [fila, columa] -> [ ,1] o sea toda las filas de la columna 1 (A favor)
+tci_afavor
+
+# Ordenamos de mayor a menor
+tci_afavor[order(tci_afavor, decreasing = TRUE)]
+# TOP 1 de TCI
+tci_afavor[order(tci_afavor, decreasing = TRUE)][1] # Canadá
+
+
+# 3.2. DH (Tratado de Derechos Humanos)
+tdh_afavor <- distr_opiniones_tdh_byCountry[ ,1]# [fila, columa] -> [ ,1] o sea toda las filas de la columna 1 (A favor)
+tdh_afavor
+
+# Ordenamos de mayor a menor
+tdh_afavor[order(tdh_afavor, decreasing = TRUE)]
+
+# TOP 1
+tdh_afavor[order(tdh_afavor, decreasing = TRUE)][1] # Canadá
+
+
+# 3.3. TMA (Tratado Medioambiental)
+# Usamos la notación de corchetes para table y extramos la columna "A Favor"
+tma_aFavor <- distr_opiniones_tma_byCountry[,1] # [fila, columa] -> [ ,1] o sea toda las filas de la columna 1 (A favor)
+tma_aFavor
+
+# Ordenamos de mayor a menor
+tma_aFavor[order(tma_aFavor, decreasing = TRUE)]
+
+# Dado que queremos remos el top 1 usamos:
+tma_aFavor[order(tma_aFavor, decreasing = TRUE)][1] # Alemania
+
 
 
 
