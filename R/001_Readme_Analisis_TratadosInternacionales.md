@@ -85,6 +85,7 @@ votos_tma[order(votos_tci, decreasing = TRUE)][1] # A favor: 319
 |TCI|A favor (356 votos)|
 |TDH|A favor (335 votos)|
 |TMA|A favor (319 votos)|
+
 ### **Pregunta 3**
 - [x] Pregunta 3
 - [!] **A FAVOR**
@@ -112,6 +113,7 @@ tci_afavor[order(tci_afavor, decreasing = TRUE)][1] # Canadá
 |Italia|8.99|
 |Reino Unido|7.58|
 |Brasil|6.74|
+
 **2. TDH (Tratado de Derechos Humanos)** ➡️**Canadá**
 ```R
 # 3.2. DH (Tratado de Derechos Humanos)
@@ -136,6 +138,7 @@ tdh_afavor[order(tdh_afavor, decreasing = TRUE)][1] # Canadá
 |Francia|8.36|
 |Japón|7.76|
 |Reino Unido|7.76|
+
 **3. TMA (Tratado Medioambiental)** ➡️ **ALEMANIA** 
 ```R
 tma_aFavor <- distr_opiniones_tma_byCountry[,1] # [fila, columa] -> [ ,1] o sea toda las filas de la columna 1 (A favor)
