@@ -1,11 +1,10 @@
 
 # Análisis de Tratados Internacionales por países 
 **Abstract:**
-
-This mini project focuses on exploring the opinions of various countries regarding three international treaties: International Trade Treaty (TCI), Human Rights Treaty (TDH), and Environmental Treaty (TMA). A dataset consisting of 10 countries' votes on a total of 100 treaties, categorized as "In favor," "Against," or "Neutral," is analyzed. The project addresses key questions, including the distribution of opinions per country for each treaty, identification of the most frequent opinions, and determination of the countries with the highest support for each treaty. The analysis is conducted using R, and the results are presented in tables and visualizations. The findings offer insights into countries' stances on the treaties, contributing to a better understanding of international opinions on these crucial matters. The project showcases how data analysis can shed light on global perspectives and inform decision-making processes.
+This mini project focuses on exploring opinions from different countries regarding three international treaties: the International Trade Treaty (TCI), the Human Rights Treaty (TDH), and the Environmental Treaty (TMA). A simulated dataset is generated, including responses from 10 different countries for each treaty. Each country provides 100 randomized responses categorized as "In favor," "Against," or "Neutral." The aim is to analyze the distributions of opinions per treaty and country, identify the most frequent opinions, and determine the countries showing the highest support for each treaty. The analysis is conducted using R, and the results are presented in the form of tables and visualizations. While the data is simulated and does not represent actual responses for 100 distinct treaties, the project illustrates how data analysis can provide insights into international opinions on crucial topics and contribute to informed decision-making.
 
 **Resumen**
-Este mini proyecto se centra en explorar las opiniones de diferentes países con respecto a tres tratados internacionales: el Tratado de Comercio Internacional (TCI), el Tratado de Derechos Humanos (TDH) y el Tratado Medioambiental (TMA). Se analiza un conjunto de datos que incluye votos de 10 países sobre un total de 100 tratados, categorizados como "A favor," "En contra" o "Neutral". El proyecto aborda preguntas clave, como la distribución de opiniones por país para cada tratado, la identificación de las opiniones más frecuentes y la determinación de los países con mayor apoyo para cada tratado. El análisis se realiza utilizando R y los resultados se presentan en tablas y visualizaciones. Los hallazgos ofrecen información sobre las posturas de los países en relación con los tratados, contribuyendo a una mejor comprensión de las opiniones internacionales sobre estos temas cruciales. El proyecto ejemplifica cómo el análisis de datos puede arrojar luz sobre perspectivas globales y proporcionar información para procesos de toma de decisiones.
+Este mini proyecto se enfoca en explorar las opiniones de diferentes países con respecto a tres tratados internacionales: el Tratado de Comercio Internacional (TCI), el Tratado de Derechos Humanos (TDH) y el Tratado Medioambiental (TMA). Se genera un conjunto de datos simulados que incluye respuestas de 10 países diferentes para cada uno de los tratados. Cada país proporciona 100 respuestas aleatorias, categorizadas como "A favor," "En contra" o "Neutral". El objetivo es analizar las distribuciones de opiniones por tratado y país, identificar las opiniones más frecuentes y determinar los países con mayor apoyo a cada tratado. El análisis se realiza utilizando R y los resultados se presentan en forma de tablas y visualizaciones. Aunque los datos son simulados y no representan respuestas reales de 100 tratados distintos, el proyecto ilustra cómo el análisis de datos puede brindar perspectivas sobre las opiniones internacionales en temas cruciales y contribuir a la toma de decisiones informada.
 
 ## Objetivo
 El objetivo de este mini proyecto es explorar las opiniones de diferentes países con respecto a tres tratados internacionales:
@@ -13,10 +12,11 @@ El objetivo de este mini proyecto es explorar las opiniones de diferentes paíse
 - TDH (Tratado de Derechos Humanos)
 - TMA (Tratado Medioambiental)
 ## Datos
-Vemos que existe **10 países** los cuales han dado un voto a un total de **100 tratados**, estos votos pudieron ser:
+Se genera un conjunto de datos simulados que incluye respuestas de 10 países diferentes con respecto a tres tratados internacionales (TCI, TDH y TMA). Cada país proporciona 100 respuestas aleatorias para cada tratado, las cuales se categorizan como:
 - A favor,
 - en contra, o
 - neutral
+Este conjunto de datos simulados permite analizar las distribuciones de opiniones en los tratados y países específicos, aunque no representa respuestas reales de 100 tratados distintos, sino 100 respuestas por tratado en cada país.
 ## Preguntas
 1. **Distribución de opiniones por país**: ¿Cuál es la distribución de opiniones (A favor, En contra, Neutral) en cada país para cada tratado internacional?
 2. **Opiniones más frecuentes**: ¿Cuáles son las opiniones más frecuentes (A favor, En contra, Neutral) en general y para cada tratado específico?
