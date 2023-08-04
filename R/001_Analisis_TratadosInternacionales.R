@@ -10,6 +10,10 @@ df_tratados <- data.frame(
   TDH = sample(c("A favor", "En contra", "Neutral"), size = 1000, replace = TRUE),
   TMA = sample(c("A favor", "En contra", "Neutral"), size = 1000, replace = TRUE)
 )
+
+# Exportar los datos del dataframe 
+
+
 df_tratados
 # Tratado de Comercio Internacional (TCI)
 # Tratado de Derechos Humanos (TDH)
@@ -52,7 +56,17 @@ distr_opiniones_tma_byCountry
 
 
 
+
 # --------------- PREGUNTA 2 ----------------------
+# Creamos una tabla donde solo me almacene los votos
+votos_tci <- table(df_tratados$TCI)
+votos_tdh <- table(df_tratados$TDH)
+votos_tma <- table(df_tratados$TMA)
+
+# Buscamos el TOP 1 de votos 
+votos_tci[order(votos_tci, decreasing = TRUE)][1] # A favor: 356
+votos_tdh[order(votos_tci, decreasing = TRUE)][1] # A favor: 335
+votos_tma[order(votos_tci, decreasing = TRUE)][1] # A favor: 319
 
 
 
